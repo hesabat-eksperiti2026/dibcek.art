@@ -63,6 +63,7 @@
         .slider-card img { width: 100%; height: 320px; object-fit: cover; }
         .slider-card-body { padding: 18px; }
         .badge { background: #FEF3C7; color: #92400E; font-size: 11px; font-weight: 700; padding: 4px 10px; border-radius: 20px; text-transform: uppercase; display: inline-block; margin-bottom: 8px; }
+        .badge-rose { background: #FCE7F3; color: #9D174D; font-size: 11px; font-weight: 700; padding: 4px 10px; border-radius: 20px; text-transform: uppercase; display: inline-block; margin-bottom: 8px; }
         .card-title { font-size: 16px; font-weight: 700; margin-bottom: 8px; color: var(--text-dark); }
         .card-price { font-size: 19px; font-weight: 800; color: var(--primary); margin-bottom: 14px; }
         .btn-wa-card { width: 100%; background: #25D366; color: white; border: none; padding: 11px; border-radius: 8px; font-weight: 700; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 8px; text-decoration: none; font-size: 14px; }
@@ -83,6 +84,8 @@
         .option-btn { background: var(--bg-light); border: 2px solid var(--border); padding: 12px; text-align: center; border-radius: 10px; cursor: pointer; font-size: 13px; font-weight: 700; transition: 0.2s; }
         .option-btn.active { border-color: var(--primary); background: #F0FDF4; color: var(--primary); }
 
+        .price-notice { background: #EFF6FF; border: 1px solid #BFDBFE; color: #1E40AF; padding: 14px; border-radius: 10px; font-size: 13px; font-weight: 600; margin-bottom: 14px; text-align: center; }
+
         .btn-order-main { background: #25D366; color: white; border: none; padding: 16px; border-radius: 30px; font-size: 17px; font-weight: 700; width: 100%; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 10px; box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3); }
 
         /* FOOTER */
@@ -99,7 +102,7 @@
     <header>
         <div class="nav-container">
             <a href="#" class="logo-wrapper">
-                <img src="dibcək logo.png" alt="Dibçək Art Logo" class="logo-img">
+                <img src="dibcək logo.jpg" alt="Dibçək Art Logo" class="logo-img">
                 <div>
                     <div class="logo-title">dibçək.art</div>
                     <div class="logo-subtitle">Flowers & Home Decor</div>
@@ -107,6 +110,7 @@
             </a>
             <nav class="nav-links">
                 <a href="#catalog">Kataloq</a>
+                <a href="#bouquets">Buketlər</a>
                 <a href="#constructor" class="btn-custom-nav"><i class="fa-solid fa-paintbrush"></i> Öz Dibçəyini Yarat</a>
                 <a href="#contact">Əlaqə</a>
             </nav>
@@ -123,15 +127,14 @@
     <!-- CATALOG SLIDER SECTION -->
     <section class="container" id="catalog">
         <div class="section-header">
-            <h2>Eksklüziv Kolleksiyamız</h2>
+            <h2>Eksklüziv Dibçək Kolleksiyamız</h2>
             <p>Canlı gül kompozisiyaları və hazır dibçəklər (Yan-yana sürüşdürün ➔)</p>
         </div>
 
         <div class="slider-wrapper">
             <div class="slider-container">
-                <!-- Yeni Atılan Şəkillər (İlk Sırada) -->
                 <div class="slider-card">
-                    <img src="Sansevieria.jpg.webp" alt="Sansevieria Dibçək">
+                    <img src="Sansevieria.jpg.jpg" alt="Sansevieria Dibçək">
                     <div class="slider-card-body">
                         <span class="badge">Canlı Bitki Seti</span>
                         <div class="card-title">Sansevieria Ağ Saxsı Dibçəkdə</div>
@@ -155,7 +158,7 @@
                 </div>
 
                 <div class="slider-card">
-                    <img src="Kalanchoe.jpg.jpeg" alt="Kalanchoe Dibçək">
+                    <img src="Kalanchoe.jpg.jpg" alt="Kalanchoe Dibçək">
                     <div class="slider-card-body">
                         <span class="badge">Rəngarəng Kompozisiya</span>
                         <div class="card-title">Kalanchoe Çiçəkli Dibçək</div>
@@ -166,7 +169,6 @@
                     </div>
                 </div>
 
-                <!-- Digər Şəkillər (Arxasında) -->
                 <div class="slider-card">
                     <img src="WhatsApp Image 2026-01-05 at 13.53.58.jpeg" alt="Portret İllüstrasiyalı Dibçək">
                     <div class="slider-card-body">
@@ -210,6 +212,70 @@
                         <div class="card-title">Tom & Jerry Əl İşi Dibçək</div>
                         <div class="card-price">28 AZN</div>
                         <a href="https://wa.me/994702887282?text=Salam!%20Tom%20və%20Jerry%20Dibçək%20sifariş%20etmək%20istəyirəm" target="_blank" class="btn-wa-card">
+                            <i class="fa-brands fa-whatsapp fa-lg"></i> Sifariş Et
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BOUQUETS SECTION (GÜL EVİM) -->
+    <section class="container" id="bouquets" style="padding-top: 0;">
+        <div class="section-header">
+            <h2>Təravətli Gül Buketləri (Gül Evim)</h2>
+            <p>Xüsusi günlər, ad günləri və sevdikləriniz üçün hazırlanan estetik buketlər</p>
+        </div>
+
+        <div class="slider-wrapper">
+            <div class="slider-container">
+                <!-- Bouquet 1 -->
+                <div class="slider-card">
+                    <img src="https://images.unsplash.com/photo-1561181286-d3fee7d55364?auto=format&fit=crop&w=600&q=80" alt="Qırmızı Qızılgül Buketi">
+                    <div class="slider-card-body">
+                        <span class="badge-rose">Klassik Qızılgül</span>
+                        <div class="card-title">101 Qırmızı Qızılgül Buketi</div>
+                        <div class="card-price">Razılaşma ilə</div>
+                        <a href="https://wa.me/994702887282?text=Salam!%20101%20Qırmızı%20Qızılgül%20Buketi%20barədə%20məlumat%20almaq%20istəyirəm" target="_blank" class="btn-wa-card">
+                            <i class="fa-brands fa-whatsapp fa-lg"></i> Sifariş Et
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Bouquet 2 -->
+                <div class="slider-card">
+                    <img src="https://images.unsplash.com/photo-1526047932273-341f2a7631f9?auto=format&fit=crop&w=600&q=80" alt="Miks Hədiyyəlik Buket">
+                    <div class="slider-card-body">
+                        <span class="badge-rose">Miks Kompozisiya</span>
+                        <div class="card-title">Eksklüziv Miks Hədiyyə Buketi</div>
+                        <div class="card-price">45 AZN</div>
+                        <a href="https://wa.me/994702887282?text=Salam!%20Eksklüziv%20Miks%20Hədiyyə%20Buketi%20sifariş%20etmək%20istəyirəm" target="_blank" class="btn-wa-card">
+                            <i class="fa-brands fa-whatsapp fa-lg"></i> Sifariş Et
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Bouquet 3 -->
+                <div class="slider-card">
+                    <img src="https://images.unsplash.com/photo-1582794543139-8ac9cb0f7b11?auto=format&fit=crop&w=600&q=80" alt="Qutuda Qızılgüllər">
+                    <div class="slider-card-body">
+                        <span class="badge-rose">Vip Qutu</span>
+                        <div class="card-title">Zərif Qutuda Çəhrayı Qızılgüllər</div>
+                        <div class="card-price">50 AZN</div>
+                        <a href="https://wa.me/994702887282?text=Salam!%20Zərif%20Qutuda%20Çəhrayı%20Qızılgüllər%20sifariş%20etmək%20istəyirəm" target="_blank" class="btn-wa-card">
+                            <i class="fa-brands fa-whatsapp fa-lg"></i> Sifariş Et
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Bouquet 4 -->
+                <div class="slider-card">
+                    <img src="https://images.unsplash.com/photo-1591886960571-74d43a9d4166?auto=format&fit=crop&w=600&q=80" alt="Piyon Buketi">
+                    <div class="slider-card-body">
+                        <span class="badge-rose">Mövsüm Çiçəkləri</span>
+                        <div class="card-title">Estetik Piyon Və Lale Buketi</div>
+                        <div class="card-price">40 AZN</div>
+                        <a href="https://wa.me/994702887282?text=Salam!%20Estetik%20Piyon%20Buketi%20sifariş%20etmək%20istəyirəm" target="_blank" class="btn-wa-card">
                             <i class="fa-brands fa-whatsapp fa-lg"></i> Sifariş Et
                         </a>
                     </div>
@@ -263,8 +329,8 @@
                 </div>
 
                 <div style="border-top: 1px solid var(--border); padding-top: 18px;">
-                    <div style="font-size: 22px; font-weight: 800; color: var(--primary); margin-bottom: 12px;">
-                        Təxmini Qiymət: <span id="totalPrice">35 AZN</span>
+                    <div class="price-notice">
+                        <i class="fa-solid fa-circle-info"></i> Qiymət göndərdiyiniz şəkil və dizaynın mürəkkəbliyinə görə rəssam tərəfindən dəyərləndirilib bildiriləcək.
                     </div>
                     <button class="btn-order-main" id="btnWhatsAppOrder">
                         <i class="fa-brands fa-whatsapp fa-xl"></i> WhatsApp İlə Sifariş Et
@@ -308,6 +374,7 @@
         
         let plantImg = new Image();
         let uploadedImg = null;
+        let isImageUploaded = false;
         
         let imgX = 160, imgY = 250, isDragging = false, startX, startY;
 
@@ -349,6 +416,7 @@
         document.getElementById('imageUploader').addEventListener('change', (e) => {
             const file = e.target.files[0];
             if(file) {
+                isImageUploaded = true;
                 const reader = new FileReader();
                 reader.onload = (evt) => {
                     uploadedImg = new Image();
@@ -400,7 +468,16 @@
         canvas.addEventListener('touchend', () => isDragging = false);
 
         document.getElementById('btnWhatsAppOrder').onclick = () => {
-            let text = `Salam Dibçək Art! Mən saytdan xüsusi dibçək dizaynı seçdim:%0A- Dibçək: ${currentPotType}%0A- Gül: ${currentPlantName}%0A- Qiymət: ${document.getElementById('totalPrice').textContent}%0AZəhmət olmasa sifariş üçün əlaqə saxlayın.`;
+            let potName = currentPotType === 'white' ? 'Ağ Saxsı (16cm)' : (currentPotType === 'terracotta' ? 'Klassik Saxsı (14cm)' : 'Gümüşü/Qara (12cm)');
+            let text = `Salam Dibçək Art! Mən saytdan xüsusi dibçək dizaynı seçdim:%0A- Dibçək Forması: ${potName}%0A- Gül: ${currentPlantName}`;
+            
+            if(isImageUploaded) {
+                text += `%0A- 🖼️ Xüsusi Şəkil: Saytda şəkil yüklədim (Zəhmət olmasa çat açıldıqda həmin şəkli də göndərin).`;
+            } else {
+                text += `%0A- Şəkil: Şəkli indi WhatsApp-dan göndərirəm.`;
+            }
+            
+            text += `%0A%0AZəhmət olmasa qiymət və hazırlıq müddətini bildirin.`;
             window.open(`https://wa.me/994702887282?text=${text}`);
         };
 

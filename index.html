@@ -34,7 +34,6 @@
         header { position: sticky; top: 0; background: rgba(255, 255, 255, 0.98); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.03); }
         .nav-container { max-width: 1280px; margin: 0 auto; padding: 10px 24px; display: flex; justify-content: space-between; align-items: center; }
         .logo-wrapper { display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--primary); }
-        .logo-img { width: 48px; height: 48px; border-radius: 50%; object-fit: cover; border: 1px solid var(--accent); }
         .logo-title { font-family: var(--font-heading); font-size: 26px; font-weight: 700; letter-spacing: -0.5px; }
         .logo-subtitle { font-size: 10px; text-transform: uppercase; letter-spacing: 2px; color: var(--accent); font-weight: 700; }
         .nav-links { display: flex; gap: 24px; align-items: center; }
@@ -113,7 +112,26 @@
     <header>
         <div class="nav-container">
             <a href="#" class="logo-wrapper">
-                <img src="dibcək logo.jpg" alt="Dibçək Art Logo" class="logo-img">
+                <!-- AVTOMATİK KODLAŞDIRILMIŞ DİBÇƏK ART VEKTOR LOGO -->
+                <svg width="52" height="52" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="50" cy="50" r="47" fill="#FBFB99" opacity="0.2"/>
+                    <circle cx="50" cy="50" r="46" stroke="#12372A" stroke-width="2.5" stroke-dasharray="4 2"/>
+                    <!-- Leaf Wreath (Yarpaq çərçivəsi) -->
+                    <path d="M22 55 C18 35, 32 20, 50 18 C68 20, 82 35, 78 55" stroke="#2D6A4F" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M22 55 C26 75, 38 82, 50 83 C62 82, 74 75, 78 55" stroke="#2D6A4F" stroke-width="2" stroke-linecap="round"/>
+                    <!-- Leaves -->
+                    <path d="M26 38 Q32 30 38 36 Q30 42 26 38 Z" fill="#D4AF37"/>
+                    <path d="M74 38 Q68 30 62 36 Q70 42 74 38 Z" fill="#D4AF37"/>
+                    <path d="M30 26 Q40 22 40 30 Q30 32 30 26 Z" fill="#2D6A4F"/>
+                    <path d="M70 26 Q60 22 60 30 Q70 32 70 26 Z" fill="#2D6A4F"/>
+                    <!-- Terracotta Pot -->
+                    <path d="M36 46 L64 46 L60 72 Q50 75 40 72 Z" fill="#12372A"/>
+                    <path d="M34 42 L66 42 L64 47 L36 47 Z" fill="#D4AF37"/>
+                    <!-- Small Flower inside pot -->
+                    <path d="M50 56 Q46 50 50 48 Q54 50 50 56 Z" fill="#D4AF37"/>
+                    <path d="M50 56 Q44 56 46 60 Q50 58 50 56 Z" fill="#D4AF37"/>
+                    <path d="M50 56 Q56 56 54 60 Q50 58 50 56 Z" fill="#D4AF37"/>
+                </svg>
                 <div>
                     <div class="logo-title">dibçək.art</div>
                     <div class="logo-subtitle">Flowers & Home Decor</div>
@@ -356,7 +374,6 @@
         </div>
 
         <div class="reviews-grid">
-            <!-- Review 1 -->
             <div class="review-card">
                 <div>
                     <div class="review-header">
@@ -369,12 +386,11 @@
                     <div class="review-stars">
                         <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                     </div>
-                    <p class="review-text">"Rəfiqəmin ad günü üçün portret şəklini dibçək üzərinə sifariş etmişdim. Rəssamın əl işinə heyran qaldım, şəkil birebir eyni çəkilmişdi! Çox təşəkkür edirəm, hədiyyəni çox bəyəndi."</p>
+                    <p class="review-text">"Rəfiqəmin ad günü üçün portret şəklini dibçək üzərinə sifariş etmişdim. Rəssamın əl işinə heyran qaldım, şəkil birebir eyni çəkilmişdi! Çox təşəkkür edirəm."</p>
                 </div>
                 <img src="WhatsApp Image 2026-01-05 at 13.53.58.jpeg" alt="Müştəri şəkli" class="review-product-img">
             </div>
 
-            <!-- Review 2 -->
             <div class="review-card">
                 <div>
                     <div class="review-header">
@@ -387,12 +403,11 @@
                     <div class="review-stars">
                         <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                     </div>
-                    <p class="review-text">"Nişanlım üçün buket sifariş verdim. Qızılgüllər tam təravətli idi, qoxusu bütün otağı götürmüşdü. Çatdırılma da dedikləri vaxtda dəqiq oldu. İşinizin peşəkarısınız."</p>
+                    <p class="review-text">"Nişanlım üçün buket sifariş verdim. Qızılgüllər tam təravətli idi, qoxusu bütün otağı götürmüşdü. Çatdırılma da dəqiq oldu."</p>
                 </div>
                 <img src="https://images.unsplash.com/photo-1561181286-d3fee7d55364?auto=format&fit=crop&w=500&q=80" alt="Müştəri şəkli" class="review-product-img">
             </div>
 
-            <!-- Review 3 -->
             <div class="review-card">
                 <div>
                     <div class="review-header">
@@ -405,12 +420,11 @@
                     <div class="review-stars">
                         <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                     </div>
-                    <p class="review-text">"Evimin interyeri üçün Sansevieria dibçəyi aldım. Saxsının keyfiyyəti və dibçəyin dizaynı evimə xüsusi gözəllik qatdı. Paketləmə də çox səliqəli idi."</p>
+                    <p class="review-text">"Evimin interyeri üçün Sansevieria dibçəyi aldım. Saxsının keyfiyyəti və dibçəyin dizaynı evimə xüsusi gözəllik qatdı."</p>
                 </div>
                 <img src="Sansevieria.jpg.jpg" alt="Müştəri şəkli" class="review-product-img">
             </div>
 
-            <!-- Review 4 -->
             <div class="review-card">
                 <div>
                     <div class="review-header">
@@ -423,12 +437,11 @@
                     <div class="review-stars">
                         <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                     </div>
-                    <p class="review-text">"Anamın ad gününə xüsusi yazılı dibçək sifariş etmişdim. Həm boyası silinmir, həm də çox mənalı hədiyyə alındı. Qiyməti də keyfiyyətinə görə çox münasibdir."</p>
+                    <p class="review-text">"Anamın ad gününə xüsusi yazılı dibçək sifariş etmişdim. Həm boyası silinmir, həm də çox mənalı hədiyyə alındı."</p>
                 </div>
                 <img src="WhatsApp Image 2026-01-05 at 13.53.57.jpeg" alt="Müştəri şəkli" class="review-product-img">
             </div>
 
-            <!-- Review 5 -->
             <div class="review-card">
                 <div>
                     <div class="review-header">
@@ -441,12 +454,11 @@
                     <div class="review-stars">
                         <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                     </div>
-                    <p class="review-text">"Ofis masam üçün aldım, alandan bəri hər gələn soruşur ki haradan asmısan. Çiçəkləri də çox təravətlidir. Saytdakı konfiqurasiya imkanı da çox rahatdır."</p>
+                    <p class="review-text">"Ofis masam üçün aldım, alandan bəri hər gələn soruşur ki haradan almısan. Çiçəkləri də çox təravətlidir."</p>
                 </div>
                 <img src="Kalanchoe.jpg.jpg" alt="Müştəri şəkli" class="review-product-img">
             </div>
 
-            <!-- Review 6 -->
             <div class="review-card">
                 <div>
                     <div class="review-header">
@@ -459,7 +471,7 @@
                     <div class="review-stars">
                         <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                     </div>
-                    <p class="review-text">"Qızılı detallarla işlənmiş dibçək həqiqətən çox lüks görünür. TamKart ilə taksitlə ödəniş etməyimiz də böyük üstünlük oldu. Təkrar sifariş edəcəyik!"</p>
+                    <p class="review-text">"Qızılı detaylarla işlənmiş dibçək həqiqətən çox lüks görünür. TamKart ilə taksitlə ödəniş etməyimiz də böyük üstünlük oldu."</p>
                 </div>
                 <img src="WhatsApp Image 2026-01-05 at 13.54.09.jpeg" alt="Müştəri şəkli" class="review-product-img">
             </div>

@@ -15,7 +15,7 @@
             --primary: #12372A;
             --primary-light: #2D6A4F;
             --accent: #D4AF37;
-            --bg-light: #FBFB9;
+            --bg-light: #F8FAFC;
             --surface: #FFFFFF;
             --text-dark: #1F2937;
             --text-muted: #6B7280;
@@ -28,7 +28,7 @@
         }
 
         * { box-sizing: border-box; margin: 0; padding: 0; font-family: var(--font-body); }
-        body { background-color: #F8FAFC; color: var(--text-dark); line-height: 1.5; }
+        body { background-color: var(--bg-light); color: var(--text-dark); line-height: 1.5; }
 
         /* HEADER */
         header { position: sticky; top: 0; background: rgba(255, 255, 255, 0.98); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.03); }
@@ -42,7 +42,7 @@
         .btn-custom-nav { background: var(--primary); color: white !important; padding: 10px 22px; border-radius: 30px; font-weight: 600 !important; box-shadow: 0 4px 12px rgba(18, 55, 42, 0.2); }
 
         /* HERO SECTION */
-        .hero { background: linear-gradient(rgba(18, 55, 42, 0.85), rgba(18, 55, 42, 0.9)), url('WhatsApp Image 2026-01-05 at 13.53.58.jpg') center/cover; color: white; padding: 90px 20px; text-align: center; }
+        .hero { background: linear-gradient(rgba(18, 55, 42, 0.85), rgba(18, 55, 42, 0.9)), url('WhatsApp Image 2026-01-05 at 13.53.58.jpeg') center/cover; color: white; padding: 90px 20px; text-align: center; }
         .hero h1 { font-family: var(--font-heading); font-size: 52px; font-weight: 700; margin-bottom: 18px; line-height: 1.2; }
         .hero p { font-size: 19px; max-width: 750px; margin: 0 auto 32px auto; color: #E2E8F0; font-weight: 300; }
         .btn-gold { background: var(--accent); color: #111; padding: 15px 36px; border-radius: 30px; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; gap: 10px; box-shadow: 0 6px 20px rgba(212, 175, 55, 0.3); font-size: 16px; }
@@ -80,7 +80,7 @@
 
         .real-select-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
         .select-box { border: 2px solid var(--border); border-radius: 10px; padding: 8px; text-align: center; cursor: pointer; transition: 0.2s; background: white; }
-        .select-box img { width: 100%; height: 75px; object-fit: cover; border-radius: 6px; margin-bottom: 6px; }
+        .select-box img { width: 100%; height: 80px; object-fit: cover; border-radius: 6px; margin-bottom: 6px; }
         .select-box.active { border-color: var(--primary); background: #F0FDF4; }
         .select-box p { font-size: 12px; font-weight: 700; }
 
@@ -137,7 +137,7 @@
             <div class="slider-container">
                 <!-- Card 1 -->
                 <div class="slider-card">
-                    <img src="WhatsApp Image 2026-01-05 at 13.53.58.jpg" alt="Əl İşi Dibçək">
+                    <img src="WhatsApp Image 2026-01-05 at 13.53.58.jpeg" alt="Portret İllüstrasiyalı Dibçək">
                     <div class="slider-card-body">
                         <span class="badge">Rəssam Əl İşi</span>
                         <div class="card-title">Portret İllüstrasiyalı Dibçək</div>
@@ -150,10 +150,10 @@
 
                 <!-- Card 2 -->
                 <div class="slider-card">
-                    <img src="WhatsApp Image 2026-01-05 at 13.53.57.jpg" alt="Yazılı Dibçək">
+                    <img src="WhatsApp Image 2026-01-05 at 13.53.57.jpeg" alt="Yazılı Dibçək Seti">
                     <div class="slider-card-body">
                         <span class="badge">Hədiyyəlik Xüsusi</span>
-                        <div class="card-title">"Dünya bir yana, sən bir yana"</div>
+                        <div class="card-title">"Dünya bir yana, sən bir yana" Seti</div>
                         <div class="card-price">32 AZN</div>
                         <a href="https://wa.me/994702887282?text=Salam!%20Yazılı%20Dibçək%20sifariş%20etmək%20istəyirəm" target="_blank" class="btn-wa-card">
                             <i class="fa-brands fa-whatsapp fa-lg"></i> Sifariş Et
@@ -176,7 +176,7 @@
 
                 <!-- Card 4 -->
                 <div class="slider-card">
-                    <img src="WhatsApp Image 2026-01-05 at 13.53.58 (1).jpg" alt="Tom Jerry Dibçək">
+                    <img src="WhatsApp Image 2026-01-05 at 13.53.58 (1).jpeg" alt="Tom və Jerry Dibçək">
                     <div class="slider-card-body">
                         <span class="badge">Çizgi Film Art</span>
                         <div class="card-title">Tom & Jerry Əl İşi Dibçək</div>
@@ -189,12 +189,25 @@
 
                 <!-- Card 5 -->
                 <div class="slider-card">
-                    <img src="WhatsApp Image 2026-01-05 at 13.53.59.jpg" alt="Motivli Dibçək">
+                    <img src="WhatsApp Image 2026-01-05 at 13.53.59.jpeg" alt="Ağ Gül Naxışlı Saxsı Dibçək">
                     <div class="slider-card-body">
                         <span class="badge">Klassik Naxış</span>
                         <div class="card-title">Ağ Gül Naxışlı Saxsı Dibçək</div>
                         <div class="card-price">30 AZN</div>
                         <a href="https://wa.me/994702887282?text=Salam!%20Ağ%20Gül%20Naxışlı%20Dibçək%20sifariş%20etmək%20istəyirəm" target="_blank" class="btn-wa-card">
+                            <i class="fa-brands fa-whatsapp fa-lg"></i> Sifariş Et
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="slider-card">
+                    <img src="WhatsApp Image 2026-01-05 at 13.53.59 (1).jpeg" alt="Gül Evim Təravətli Dibçək">
+                    <div class="slider-card-body">
+                        <span class="badge">Təravətli Gül</span>
+                        <div class="card-title">Çiçəkli Kalanchoe Kompozisiyası</div>
+                        <div class="card-price">34 AZN</div>
+                        <a href="https://wa.me/994702887282?text=Salam!%20Çiçəkli%20Kalanchoe%20sifariş%20etmək%20istəyirəm" target="_blank" class="btn-wa-card">
                             <i class="fa-brands fa-whatsapp fa-lg"></i> Sifariş Et
                         </a>
                     </div>
@@ -207,7 +220,7 @@
     <section class="container" id="constructor">
         <div class="section-header">
             <h2>Öz Dibçəyini Yarat (Canlı Önizləmə)</h2>
-            <p>Seçdiyiniz şəklin dibçək üzərində necə duracağını saytda anında görün</p>
+            <p>Seçdiyiniz real dibçək və canlı gül şəklini seçərək görünüşə anında baxın</p>
         </div>
 
         <div class="constructor-card">
@@ -225,15 +238,15 @@
                 <div>
                     <div class="step-title"><span>1</span> Dibçək Formasını Seçin</div>
                     <div class="real-select-grid">
-                        <div class="select-box active" onclick="setPot('white', this)">
-                            <img src="WhatsApp Image 2026-01-05 at 13.53.58.jpg" alt="Ağ Saxsı">
+                        <div class="select-box active" onclick="setPot('WhatsApp Image 2026-01-05 at 13.53.58.jpeg', this)">
+                            <img src="WhatsApp Image 2026-01-05 at 13.53.58.jpeg" alt="Ağ Saxsı">
                             <p>Ağ Saxsı (16cm)</p>
                         </div>
-                        <div class="select-box" onclick="setPot('terracotta', this)">
-                            <img src="WhatsApp Image 2026-01-05 at 13.53.59.jpg" alt="Klassik Saxsı">
+                        <div class="select-box" onclick="setPot('WhatsApp Image 2026-01-05 at 13.53.59.jpeg', this)">
+                            <img src="WhatsApp Image 2026-01-05 at 13.53.59.jpeg" alt="Klassik Saxsı">
                             <p>Klassik Saxsı</p>
                         </div>
-                        <div class="select-box" onclick="setPot('dark', this)">
+                        <div class="select-box" onclick="setPot('WhatsApp Image 2026-01-05 at 13.54.09.jpeg', this)">
                             <img src="WhatsApp Image 2026-01-05 at 13.54.09.jpeg" alt="Gümüşü">
                             <p>Gümüşü / Qara</p>
                         </div>
@@ -250,16 +263,16 @@
                 <div>
                     <div class="step-title"><span>3</span> İçinə Əkiləcək Canlı Gül</div>
                     <div class="real-select-grid">
-                        <div class="select-box active" onclick="setPlant('sansevieria', this)">
-                            <img src="WhatsApp Image 2026-01-05 at 13.53.58 (1).jpg" alt="Sansevieria">
+                        <div class="select-box active" onclick="setPlant('WhatsApp Image 2026-01-05 at 13.53.58 (1).jpeg', 'Sansevieria', this)">
+                            <img src="WhatsApp Image 2026-01-05 at 13.53.58 (1).jpeg" alt="Sansevieria">
                             <p>Sansevieria</p>
                         </div>
-                        <div class="select-box" onclick="setPlant('spathi', this)">
-                            <img src="WhatsApp Image 2026-01-05 at 13.53.58.jpg" alt="Spathiphyllum">
+                        <div class="select-box" onclick="setPlant('WhatsApp Image 2026-01-05 at 13.53.57.jpeg', 'Spathiphyllum', this)">
+                            <img src="WhatsApp Image 2026-01-05 at 13.53.57.jpeg" alt="Spathiphyllum">
                             <p>Spathiphyllum</p>
                         </div>
-                        <div class="select-box" onclick="setPlant('kalanchoe', this)">
-                            <img src="WhatsApp Image 2026-01-05 at 13.53.59 (1).jpg" alt="Kalanchoe">
+                        <div class="select-box" onclick="setPlant('WhatsApp Image 2026-01-05 at 13.53.59 (1).jpeg', 'Kalanchoe', this)">
+                            <img src="WhatsApp Image 2026-01-05 at 13.53.59 (1).jpeg" alt="Kalanchoe">
                             <p>Kalanchoe</p>
                         </div>
                     </div>
@@ -300,50 +313,64 @@
         </div>
     </footer>
 
-    <!-- INTERACTIVE SCRIPT -->
+    <!-- REAL IMAGE CANVAS RENDER SCRIPT -->
     <script>
         const canvas = document.getElementById('potCanvas');
         const ctx = canvas.getContext('2d');
-        let currentPot = 'white', currentPlant = 'sansevieria', uploadedImg = null;
-        let imgX = 160, imgY = 250, isDragging = false, startX, startY;
+        
+        let currentPotSrc = 'WhatsApp Image 2026-01-05 at 13.53.58.jpeg';
+        let currentPlantSrc = 'WhatsApp Image 2026-01-05 at 13.53.58 (1).jpeg';
+        let currentPlantName = 'Sansevieria';
+        
+        let potImg = new Image();
+        let plantImg = new Image();
+        let uploadedImg = null;
+        
+        let imgX = 160, imgY = 270, isDragging = false, startX, startY;
 
-        function render() {
+        function loadImagesAndRender() {
+            let loaded = 0;
+            potImg.src = currentPotSrc;
+            plantImg.src = currentPlantSrc;
+
+            potImg.onload = () => { loaded++; if(loaded >= 2) drawCanvas(); };
+            plantImg.onload = () => { loaded++; if(loaded >= 2) drawCanvas(); };
+
+            // Backup if cached
+            if (potImg.complete && plantImg.complete) {
+                drawCanvas();
+            }
+        }
+
+        function drawCanvas() {
             ctx.clearRect(0, 0, 320, 420);
             
-            // Draw Plant
-            ctx.fillStyle = '#1e5138';
-            if(currentPlant === 'sansevieria') {
-                ctx.beginPath(); ctx.ellipse(160, 110, 20, 70, 0, 0, Math.PI*2); ctx.fill();
-                ctx.beginPath(); ctx.ellipse(140, 130, 15, 50, -0.2, 0, Math.PI*2); ctx.fill();
-                ctx.beginPath(); ctx.ellipse(180, 130, 15, 50, 0.2, 0, Math.PI*2); ctx.fill();
-            } else if(currentPlant === 'spathi') {
-                ctx.beginPath(); ctx.ellipse(160, 120, 40, 50, 0, 0, Math.PI*2); ctx.fill();
-                ctx.fillStyle = '#ffffff';
-                ctx.beginPath(); ctx.ellipse(160, 80, 10, 25, 0, 0, Math.PI*2); ctx.fill();
-            } else {
-                ctx.fillStyle = '#e11d48';
-                ctx.beginPath(); ctx.arc(160, 110, 35, 0, Math.PI*2); ctx.fill();
-            }
+            // 1. Draw Real Plant Image (Top Layer)
+            ctx.save();
+            ctx.drawImage(plantImg, 30, 10, 260, 200);
+            ctx.restore();
 
-            // Draw Pot
-            ctx.fillStyle = currentPot === 'white' ? '#FFFFFF' : (currentPot === 'terracotta' ? '#D97706' : '#334155');
-            ctx.beginPath();
-            ctx.moveTo(95, 180); ctx.lineTo(225, 180); ctx.lineTo(200, 330); ctx.lineTo(120, 330);
-            ctx.closePath(); ctx.fill(); 
-            ctx.strokeStyle = '#CBD5E1'; ctx.lineWidth = 2; ctx.stroke();
+            // 2. Draw Real Pot Image (Base Layer)
+            ctx.save();
+            ctx.drawImage(potImg, 40, 180, 240, 220);
+            ctx.restore();
 
-            // Overlay Image
+            // 3. Draw Overlay Artwork Image (Custom User Photo)
             if(uploadedImg) {
                 ctx.save();
                 ctx.beginPath();
-                ctx.moveTo(97, 182); ctx.lineTo(223, 182); ctx.lineTo(198, 328); ctx.lineTo(122, 328);
-                ctx.closePath(); ctx.clip();
+                ctx.rect(70, 210, 180, 160);
+                ctx.clip();
                 ctx.drawImage(uploadedImg, imgX - 60, imgY - 60, 120, 120);
                 ctx.restore();
             } else {
-                ctx.fillStyle = '#94A3B8'; ctx.font = '600 13px "Plus Jakarta Sans"';
-                ctx.fillText('Yüklədiyiniz şəkil', 110, 250);
-                ctx.fillText('burada görünəcək', 108, 270);
+                ctx.fillStyle = 'rgba(255, 255, 255, 0.85)';
+                ctx.fillRect(85, 240, 150, 50);
+                ctx.strokeStyle = '#CBD5E1';
+                ctx.strokeRect(85, 240, 150, 50);
+                ctx.fillStyle = '#1E293B'; 
+                ctx.font = '600 12px "Plus Jakarta Sans"';
+                ctx.fillText('Çəkiləcək şəkli yükleyin', 95, 270);
             }
         }
 
@@ -353,37 +380,60 @@
                 const reader = new FileReader();
                 reader.onload = (evt) => {
                     uploadedImg = new Image();
-                    uploadedImg.onload = render;
+                    uploadedImg.onload = drawCanvas;
                     uploadedImg.src = evt.target.result;
                 }
                 reader.readAsDataURL(file);
             }
         });
 
-        function setPot(p, el) { 
-            currentPot = p; 
+        function setPot(src, el) { 
+            currentPotSrc = src; 
             el.parentElement.querySelectorAll('.select-box').forEach(b => b.classList.remove('active'));
             el.classList.add('active');
-            render(); 
+            loadImagesAndRender(); 
         }
 
-        function setPlant(pl, el) { 
-            currentPlant = pl; 
+        function setPlant(src, name, el) { 
+            currentPlantSrc = src; 
+            currentPlantName = name;
             el.parentElement.querySelectorAll('.select-box').forEach(b => b.classList.remove('active'));
             el.classList.add('active');
-            render(); 
+            loadImagesAndRender(); 
         }
 
         canvas.addEventListener('mousedown', (e) => { isDragging = true; startX = e.offsetX - imgX; startY = e.offsetY - imgY; });
-        canvas.addEventListener('mousemove', (e) => { if(isDragging && uploadedImg) { imgX = e.offsetX - startX; imgY = e.offsetY - startY; render(); } });
+        canvas.addEventListener('mousemove', (e) => { if(isDragging && uploadedImg) { imgX = e.offsetX - startX; imgY = e.offsetY - startY; drawCanvas(); } });
         window.addEventListener('mouseup', () => isDragging = false);
 
+        // Touch support for mobile
+        canvas.addEventListener('touchstart', (e) => {
+            const touch = e.touches[0];
+            const rect = canvas.getBoundingClientRect();
+            isDragging = true;
+            startX = (touch.clientX - rect.left) - imgX;
+            startY = (touch.clientY - rect.top) - imgY;
+        });
+
+        canvas.addEventListener('touchmove', (e) => {
+            if(isDragging && uploadedImg) {
+                const touch = e.touches[0];
+                const rect = canvas.getBoundingClientRect();
+                imgX = (touch.clientX - rect.left) - startX;
+                imgY = (touch.clientY - rect.top) - startY;
+                drawCanvas();
+            }
+        });
+
+        canvas.addEventListener('touchend', () => isDragging = false);
+
         document.getElementById('btnWhatsAppOrder').onclick = () => {
-            let text = `Salam Dibçək Art! Mən saytdan yeni custom dibçək yığdım:%0A- Dibçək: ${currentPot}%0A- Gül: ${currentPlant}%0A- Qiymət: ${document.getElementById('totalPrice').textContent}%0AZəhmət olmasa sifarişi dəqiqləşdirin.`;
+            let text = `Salam Dibçək Art! Mən saytdan xüsusi dibçək konfiqurasiyası seçdim:%0A- Gül: ${currentPlantName}%0A- Qiymət: ${document.getElementById('totalPrice').textContent}%0AZəhmət olmasa sifariş üçün əlaqə saxlayın.`;
             window.open(`https://wa.me/994702887282?text=${text}`);
         };
 
-        render();
+        // Initial Load
+        loadImagesAndRender();
     </script>
 </body>
 </html>

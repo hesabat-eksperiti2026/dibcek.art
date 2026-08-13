@@ -32,9 +32,10 @@
 
         /* HEADER */
         header { position: sticky; top: 0; background: rgba(255, 255, 255, 0.98); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.03); }
-        .nav-container { max-width: 1280px; margin: 0 auto; padding: 14px 24px; display: flex; justify-content: space-between; align-items: center; }
+        .nav-container { max-width: 1280px; margin: 0 auto; padding: 10px 24px; display: flex; justify-content: space-between; align-items: center; }
         .logo-wrapper { display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--primary); }
-        .logo-title { font-family: var(--font-heading); font-size: 28px; font-weight: 700; letter-spacing: -0.5px; }
+        .logo-img { width: 48px; height: 48px; border-radius: 50%; object-fit: cover; border: 1px solid var(--accent); }
+        .logo-title { font-family: var(--font-heading); font-size: 26px; font-weight: 700; letter-spacing: -0.5px; }
         .logo-subtitle { font-size: 10px; text-transform: uppercase; letter-spacing: 2px; color: var(--accent); font-weight: 700; }
         .nav-links { display: flex; gap: 24px; align-items: center; }
         .nav-links a { text-decoration: none; color: var(--text-dark); font-weight: 600; font-size: 15px; transition: 0.2s; }
@@ -42,9 +43,9 @@
         .btn-custom-nav { background: var(--primary); color: white !important; padding: 10px 22px; border-radius: 30px; font-weight: 600 !important; box-shadow: 0 4px 12px rgba(18, 55, 42, 0.2); }
 
         /* HERO SECTION */
-        .hero { background: linear-gradient(rgba(18, 55, 42, 0.85), rgba(18, 55, 42, 0.9)), url('WhatsApp Image 2026-01-05 at 13.53.58.jpeg') center/cover; color: white; padding: 90px 20px; text-align: center; }
-        .hero h1 { font-family: var(--font-heading); font-size: 52px; font-weight: 700; margin-bottom: 18px; line-height: 1.2; }
-        .hero p { font-size: 19px; max-width: 750px; margin: 0 auto 32px auto; color: #E2E8F0; font-weight: 300; }
+        .hero { background: linear-gradient(rgba(18, 55, 42, 0.85), rgba(18, 55, 42, 0.9)), url('WhatsApp Image 2026-01-05 at 13.53.58.jpeg') center/cover; color: white; padding: 80px 20px; text-align: center; }
+        .hero h1 { font-family: var(--font-heading); font-size: 50px; font-weight: 700; margin-bottom: 18px; line-height: 1.2; }
+        .hero p { font-size: 18px; max-width: 750px; margin: 0 auto 32px auto; color: #E2E8F0; font-weight: 300; }
         .btn-gold { background: var(--accent); color: #111; padding: 15px 36px; border-radius: 30px; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; gap: 10px; box-shadow: 0 6px 20px rgba(212, 175, 55, 0.3); font-size: 16px; }
 
         .container { max-width: 1280px; margin: 0 auto; padding: 60px 20px; }
@@ -57,18 +58,18 @@
         .slider-container { display: flex; gap: 24px; overflow-x: auto; scroll-behavior: smooth; padding-bottom: 25px; scroll-snap-type: x mandatory; }
         .slider-container::-webkit-scrollbar { height: 8px; }
         .slider-container::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 10px; }
-        .slider-card { flex: 0 0 300px; scroll-snap-align: start; background: white; border-radius: var(--radius-md); border: 1px solid var(--border); overflow: hidden; box-shadow: var(--shadow-card); transition: transform 0.3s; }
+        .slider-card { flex: 0 0 290px; scroll-snap-align: start; background: white; border-radius: var(--radius-md); border: 1px solid var(--border); overflow: hidden; box-shadow: var(--shadow-card); transition: transform 0.3s; }
         .slider-card:hover { transform: translateY(-5px); }
         .slider-card img { width: 100%; height: 320px; object-fit: cover; }
         .slider-card-body { padding: 18px; }
         .badge { background: #FEF3C7; color: #92400E; font-size: 11px; font-weight: 700; padding: 4px 10px; border-radius: 20px; text-transform: uppercase; display: inline-block; margin-bottom: 8px; }
-        .card-title { font-size: 17px; font-weight: 700; margin-bottom: 8px; color: var(--text-dark); }
-        .card-price { font-size: 20px; font-weight: 800; color: var(--primary); margin-bottom: 14px; }
+        .card-title { font-size: 16px; font-weight: 700; margin-bottom: 8px; color: var(--text-dark); }
+        .card-price { font-size: 19px; font-weight: 800; color: var(--primary); margin-bottom: 14px; }
         .btn-wa-card { width: 100%; background: #25D366; color: white; border: none; padding: 11px; border-radius: 8px; font-weight: 700; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 8px; text-decoration: none; font-size: 14px; }
 
         /* CONSTRUCTOR SECTION */
         .constructor-card { background: white; border-radius: var(--radius-lg); border: 1px solid var(--border); box-shadow: var(--shadow-card); display: grid; grid-template-columns: 1fr 1fr; overflow: hidden; }
-        @media(max-width: 960px) { .constructor-card { grid-template-columns: 1fr; } .hero h1 { font-size: 36px; } .nav-links { display: none; } }
+        @media(max-width: 960px) { .constructor-card { grid-template-columns: 1fr; } .hero h1 { font-size: 34px; } .nav-links { display: none; } }
 
         .canvas-area { background: #F1F5F9; padding: 30px; display: flex; flex-direction: column; align-items: center; justify-content: center; }
         .canvas-holder { width: 320px; height: 420px; background: white; border-radius: 16px; position: relative; box-shadow: 0 8px 25px rgba(0,0,0,0.06); overflow: hidden; }
@@ -78,11 +79,9 @@
         .step-title { font-weight: 700; font-size: 16px; margin-bottom: 12px; display: flex; align-items: center; gap: 10px; }
         .step-title span { background: var(--primary); color: white; width: 26px; height: 26px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 13px; }
 
-        .real-select-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
-        .select-box { border: 2px solid var(--border); border-radius: 10px; padding: 8px; text-align: center; cursor: pointer; transition: 0.2s; background: white; }
-        .select-box img { width: 100%; height: 80px; object-fit: cover; border-radius: 6px; margin-bottom: 6px; }
-        .select-box.active { border-color: var(--primary); background: #F0FDF4; }
-        .select-box p { font-size: 12px; font-weight: 700; }
+        .option-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+        .option-btn { background: var(--bg-light); border: 2px solid var(--border); padding: 12px; text-align: center; border-radius: 10px; cursor: pointer; font-size: 13px; font-weight: 700; transition: 0.2s; }
+        .option-btn.active { border-color: var(--primary); background: #F0FDF4; color: var(--primary); }
 
         .btn-order-main { background: #25D366; color: white; border: none; padding: 16px; border-radius: 30px; font-size: 17px; font-weight: 700; width: 100%; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 10px; box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3); }
 
@@ -100,12 +99,7 @@
     <header>
         <div class="nav-container">
             <a href="#" class="logo-wrapper">
-                <svg width="45" height="45" viewBox="0 0 100 100" fill="none">
-                    <circle cx="50" cy="50" r="46" stroke="#12372A" stroke-width="3" stroke-dasharray="4 2"/>
-                    <path d="M35 48 L38 70 Q50 76 62 70 L65 48 Z" fill="#12372A"/>
-                    <path d="M50 48 Q40 30 28 32 Q38 45 50 48 Z" fill="#D4AF37"/>
-                    <path d="M50 48 Q60 30 72 32 Q62 45 50 48 Z" fill="#D4AF37"/>
-                </svg>
+                <img src="dibcək logo.jpg" alt="Dibçək Art Logo" class="logo-img">
                 <div>
                     <div class="logo-title">dibçək.art</div>
                     <div class="logo-subtitle">Flowers & Home Decor</div>
@@ -130,12 +124,49 @@
     <section class="container" id="catalog">
         <div class="section-header">
             <h2>Eksklüziv Kolleksiyamız</h2>
-            <p>Rəssamlarımızın hazırladığı hazır dibçəklər (Yan-yana sürüşdürün ➔)</p>
+            <p>Canlı gül kompozisiyaları və hazır dibçəklər (Yan-yana sürüşdürün ➔)</p>
         </div>
 
         <div class="slider-wrapper">
             <div class="slider-container">
-                <!-- Card 1 -->
+                <!-- Yeni Atılan Şəkillər (İlk Sırada) -->
+                <div class="slider-card">
+                    <img src="Sansevieria.jpg.jpg" alt="Sansevieria Dibçək">
+                    <div class="slider-card-body">
+                        <span class="badge">Canlı Bitki Seti</span>
+                        <div class="card-title">Sansevieria Ağ Saxsı Dibçəkdə</div>
+                        <div class="card-price">35 AZN</div>
+                        <a href="https://wa.me/994702887282?text=Salam!%20Sansevieria%20Dibçək%20sifariş%20etmək%20istəyirəm" target="_blank" class="btn-wa-card">
+                            <i class="fa-brands fa-whatsapp fa-lg"></i> Sifariş Et
+                        </a>
+                    </div>
+                </div>
+
+                <div class="slider-card">
+                    <img src="Spathiphyllum.jpg.jpg" alt="Spathiphyllum Dibçək">
+                    <div class="slider-card-body">
+                        <span class="badge">Təravətli Çiçək</span>
+                        <div class="card-title">Spathiphyllum (Sülh Gülü)</div>
+                        <div class="card-price">32 AZN</div>
+                        <a href="https://wa.me/994702887282?text=Salam!%20Spathiphyllum%20Dibçək%20sifariş%20etmək%20istəyirəm" target="_blank" class="btn-wa-card">
+                            <i class="fa-brands fa-whatsapp fa-lg"></i> Sifariş Et
+                        </a>
+                    </div>
+                </div>
+
+                <div class="slider-card">
+                    <img src="Kalanchoe.jpg.jpg" alt="Kalanchoe Dibçək">
+                    <div class="slider-card-body">
+                        <span class="badge">Rəngarəng Kompozisiya</span>
+                        <div class="card-title">Kalanchoe Çiçəkli Dibçək</div>
+                        <div class="card-price">30 AZN</div>
+                        <a href="https://wa.me/994702887282?text=Salam!%20Kalanchoe%20Dibçək%20sifariş%20etmək%20istəyirəm" target="_blank" class="btn-wa-card">
+                            <i class="fa-brands fa-whatsapp fa-lg"></i> Sifariş Et
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Digər Şəkillər (Arxasında) -->
                 <div class="slider-card">
                     <img src="WhatsApp Image 2026-01-05 at 13.53.58.jpeg" alt="Portret İllüstrasiyalı Dibçək">
                     <div class="slider-card-body">
@@ -148,7 +179,6 @@
                     </div>
                 </div>
 
-                <!-- Card 2 -->
                 <div class="slider-card">
                     <img src="WhatsApp Image 2026-01-05 at 13.53.57.jpeg" alt="Yazılı Dibçək Seti">
                     <div class="slider-card-body">
@@ -161,7 +191,6 @@
                     </div>
                 </div>
 
-                <!-- Card 3 -->
                 <div class="slider-card">
                     <img src="WhatsApp Image 2026-01-05 at 13.54.09.jpeg" alt="Qızılı İşləməli Dibçək">
                     <div class="slider-card-body">
@@ -174,7 +203,6 @@
                     </div>
                 </div>
 
-                <!-- Card 4 -->
                 <div class="slider-card">
                     <img src="WhatsApp Image 2026-01-05 at 13.53.58 (1).jpeg" alt="Tom və Jerry Dibçək">
                     <div class="slider-card-body">
@@ -182,32 +210,6 @@
                         <div class="card-title">Tom & Jerry Əl İşi Dibçək</div>
                         <div class="card-price">28 AZN</div>
                         <a href="https://wa.me/994702887282?text=Salam!%20Tom%20və%20Jerry%20Dibçək%20sifariş%20etmək%20istəyirəm" target="_blank" class="btn-wa-card">
-                            <i class="fa-brands fa-whatsapp fa-lg"></i> Sifariş Et
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Card 5 -->
-                <div class="slider-card">
-                    <img src="WhatsApp Image 2026-01-05 at 13.53.59.jpeg" alt="Ağ Gül Naxışlı Saxsı Dibçək">
-                    <div class="slider-card-body">
-                        <span class="badge">Klassik Naxış</span>
-                        <div class="card-title">Ağ Gül Naxışlı Saxsı Dibçək</div>
-                        <div class="card-price">30 AZN</div>
-                        <a href="https://wa.me/994702887282?text=Salam!%20Ağ%20Gül%20Naxışlı%20Dibçək%20sifariş%20etmək%20istəyirəm" target="_blank" class="btn-wa-card">
-                            <i class="fa-brands fa-whatsapp fa-lg"></i> Sifariş Et
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Card 6 -->
-                <div class="slider-card">
-                    <img src="WhatsApp Image 2026-01-05 at 13.53.59 (1).jpeg" alt="Gül Evim Təravətli Dibçək">
-                    <div class="slider-card-body">
-                        <span class="badge">Təravətli Gül</span>
-                        <div class="card-title">Çiçəkli Kalanchoe Kompozisiyası</div>
-                        <div class="card-price">34 AZN</div>
-                        <a href="https://wa.me/994702887282?text=Salam!%20Çiçəkli%20Kalanchoe%20sifariş%20etmək%20istəyirəm" target="_blank" class="btn-wa-card">
                             <i class="fa-brands fa-whatsapp fa-lg"></i> Sifariş Et
                         </a>
                     </div>
@@ -220,7 +222,7 @@
     <section class="container" id="constructor">
         <div class="section-header">
             <h2>Öz Dibçəyini Yarat (Canlı Önizləmə)</h2>
-            <p>Seçdiyiniz real dibçək və canlı gül şəklini seçərək görünüşə anında baxın</p>
+            <p>Dibçəyin formasını, gülünü seçin və yüklədiyiniz şəklin canlı önizləməsinə baxın</p>
         </div>
 
         <div class="constructor-card">
@@ -236,20 +238,11 @@
             <div class="panel-area">
                 <!-- Step 1: Pot Type -->
                 <div>
-                    <div class="step-title"><span>1</span> Dibçək Formasını Seçin</div>
-                    <div class="real-select-grid">
-                        <div class="select-box active" onclick="setPot('WhatsApp Image 2026-01-05 at 13.53.58.jpeg', this)">
-                            <img src="WhatsApp Image 2026-01-05 at 13.53.58.jpeg" alt="Ağ Saxsı">
-                            <p>Ağ Saxsı (16cm)</p>
-                        </div>
-                        <div class="select-box" onclick="setPot('WhatsApp Image 2026-01-05 at 13.53.59.jpeg', this)">
-                            <img src="WhatsApp Image 2026-01-05 at 13.53.59.jpeg" alt="Klassik Saxsı">
-                            <p>Klassik Saxsı</p>
-                        </div>
-                        <div class="select-box" onclick="setPot('WhatsApp Image 2026-01-05 at 13.54.09.jpeg', this)">
-                            <img src="WhatsApp Image 2026-01-05 at 13.54.09.jpeg" alt="Gümüşü">
-                            <p>Gümüşü / Qara</p>
-                        </div>
+                    <div class="step-title"><span>1</span> Dibçək Formasını və Rəngini Seçin</div>
+                    <div class="option-grid">
+                        <div class="option-btn active" onclick="setPot('white', this)">Ağ Saxsı<br><small>(16cm)</small></div>
+                        <div class="option-btn" onclick="setPot('terracotta', this)">Klassik Saxsı<br><small>(14cm)</small></div>
+                        <div class="option-btn" onclick="setPot('dark', this)">Gümüşü/Qara<br><small>(12cm)</small></div>
                     </div>
                 </div>
 
@@ -262,19 +255,10 @@
                 <!-- Step 3: Plant Choice -->
                 <div>
                     <div class="step-title"><span>3</span> İçinə Əkiləcək Canlı Gül</div>
-                    <div class="real-select-grid">
-                        <div class="select-box active" onclick="setPlant('WhatsApp Image 2026-01-05 at 13.53.58 (1).jpeg', 'Sansevieria', this)">
-                            <img src="WhatsApp Image 2026-01-05 at 13.53.58 (1).jpeg" alt="Sansevieria">
-                            <p>Sansevieria</p>
-                        </div>
-                        <div class="select-box" onclick="setPlant('WhatsApp Image 2026-01-05 at 13.53.57.jpeg', 'Spathiphyllum', this)">
-                            <img src="WhatsApp Image 2026-01-05 at 13.53.57.jpeg" alt="Spathiphyllum">
-                            <p>Spathiphyllum</p>
-                        </div>
-                        <div class="select-box" onclick="setPlant('WhatsApp Image 2026-01-05 at 13.53.59 (1).jpeg', 'Kalanchoe', this)">
-                            <img src="WhatsApp Image 2026-01-05 at 13.53.59 (1).jpeg" alt="Kalanchoe">
-                            <p>Kalanchoe</p>
-                        </div>
+                    <div class="option-grid">
+                        <div class="option-btn active" onclick="setPlant('Sansevieria.png', 'Sansevieria', this)">Sansevieria</div>
+                        <div class="option-btn" onclick="setPlant('Spathiphyllum.png', 'Spathiphyllum', this)">Spathiphyllum</div>
+                        <div class="option-btn" onclick="setPlant('Kalanchoe.png', 'Kalanchoe', this)">Kalanchoe</div>
                     </div>
                 </div>
 
@@ -313,64 +297,52 @@
         </div>
     </footer>
 
-    <!-- REAL IMAGE CANVAS RENDER SCRIPT -->
+    <!-- CANVAS SCRIPT -->
     <script>
         const canvas = document.getElementById('potCanvas');
         const ctx = canvas.getContext('2d');
         
-        let currentPotSrc = 'WhatsApp Image 2026-01-05 at 13.53.58.jpeg';
-        let currentPlantSrc = 'WhatsApp Image 2026-01-05 at 13.53.58 (1).jpeg';
+        let currentPotType = 'white';
+        let currentPlantSrc = 'Sansevieria.png';
         let currentPlantName = 'Sansevieria';
         
-        let potImg = new Image();
         let plantImg = new Image();
         let uploadedImg = null;
         
-        let imgX = 160, imgY = 270, isDragging = false, startX, startY;
+        let imgX = 160, imgY = 250, isDragging = false, startX, startY;
 
-        function loadImagesAndRender() {
-            let loaded = 0;
-            potImg.src = currentPotSrc;
-            plantImg.src = currentPlantSrc;
-
-            potImg.onload = () => { loaded++; if(loaded >= 2) drawCanvas(); };
-            plantImg.onload = () => { loaded++; if(loaded >= 2) drawCanvas(); };
-
-            // Backup if cached
-            if (potImg.complete && plantImg.complete) {
-                drawCanvas();
-            }
-        }
-
-        function drawCanvas() {
+        function render() {
             ctx.clearRect(0, 0, 320, 420);
             
-            // 1. Draw Real Plant Image (Top Layer)
+            // 1. Draw Transparent PNG Plant
+            plantImg.src = currentPlantSrc;
+            if(plantImg.complete) {
+                ctx.drawImage(plantImg, 60, 20, 200, 180);
+            } else {
+                plantImg.onload = () => { ctx.drawImage(plantImg, 60, 20, 200, 180); };
+            }
+
+            // 2. Draw Vector Pot Base
             ctx.save();
-            ctx.drawImage(plantImg, 30, 10, 260, 200);
+            ctx.fillStyle = currentPotType === 'white' ? '#FFFFFF' : (currentPotType === 'terracotta' ? '#D97706' : '#334155');
+            ctx.beginPath();
+            ctx.moveTo(95, 175); ctx.lineTo(225, 175); ctx.lineTo(200, 330); ctx.lineTo(120, 330);
+            ctx.closePath(); ctx.fill(); 
+            ctx.strokeStyle = '#CBD5E1'; ctx.lineWidth = 2; ctx.stroke();
             ctx.restore();
 
-            // 2. Draw Real Pot Image (Base Layer)
-            ctx.save();
-            ctx.drawImage(potImg, 40, 180, 240, 220);
-            ctx.restore();
-
-            // 3. Draw Overlay Artwork Image (Custom User Photo)
+            // 3. Draw Uploaded Image (Clipped on Pot Face)
             if(uploadedImg) {
                 ctx.save();
                 ctx.beginPath();
-                ctx.rect(70, 210, 180, 160);
-                ctx.clip();
+                ctx.moveTo(97, 177); ctx.lineTo(223, 177); ctx.lineTo(198, 328); ctx.lineTo(122, 328);
+                ctx.closePath(); ctx.clip();
                 ctx.drawImage(uploadedImg, imgX - 60, imgY - 60, 120, 120);
                 ctx.restore();
             } else {
-                ctx.fillStyle = 'rgba(255, 255, 255, 0.85)';
-                ctx.fillRect(85, 240, 150, 50);
-                ctx.strokeStyle = '#CBD5E1';
-                ctx.strokeRect(85, 240, 150, 50);
-                ctx.fillStyle = '#1E293B'; 
-                ctx.font = '600 12px "Plus Jakarta Sans"';
-                ctx.fillText('Çəkiləcək şəkli yükleyin', 95, 270);
+                ctx.fillStyle = '#94A3B8'; ctx.font = '600 12px "Plus Jakarta Sans"';
+                ctx.fillText('Yüklədiyiniz şəkil', 110, 245);
+                ctx.fillText('burada görünəcək', 108, 265);
             }
         }
 
@@ -380,33 +352,33 @@
                 const reader = new FileReader();
                 reader.onload = (evt) => {
                     uploadedImg = new Image();
-                    uploadedImg.onload = drawCanvas;
+                    uploadedImg.onload = render;
                     uploadedImg.src = evt.target.result;
                 }
                 reader.readAsDataURL(file);
             }
         });
 
-        function setPot(src, el) { 
-            currentPotSrc = src; 
-            el.parentElement.querySelectorAll('.select-box').forEach(b => b.classList.remove('active'));
+        function setPot(type, el) { 
+            currentPotType = type; 
+            el.parentElement.querySelectorAll('.option-btn').forEach(b => b.classList.remove('active'));
             el.classList.add('active');
-            loadImagesAndRender(); 
+            render(); 
         }
 
         function setPlant(src, name, el) { 
             currentPlantSrc = src; 
             currentPlantName = name;
-            el.parentElement.querySelectorAll('.select-box').forEach(b => b.classList.remove('active'));
+            el.parentElement.querySelectorAll('.option-btn').forEach(b => b.classList.remove('active'));
             el.classList.add('active');
-            loadImagesAndRender(); 
+            render(); 
         }
 
         canvas.addEventListener('mousedown', (e) => { isDragging = true; startX = e.offsetX - imgX; startY = e.offsetY - imgY; });
-        canvas.addEventListener('mousemove', (e) => { if(isDragging && uploadedImg) { imgX = e.offsetX - startX; imgY = e.offsetY - startY; drawCanvas(); } });
+        canvas.addEventListener('mousemove', (e) => { if(isDragging && uploadedImg) { imgX = e.offsetX - startX; imgY = e.offsetY - startY; render(); } });
         window.addEventListener('mouseup', () => isDragging = false);
 
-        // Touch support for mobile
+        // Touch support
         canvas.addEventListener('touchstart', (e) => {
             const touch = e.touches[0];
             const rect = canvas.getBoundingClientRect();
@@ -421,19 +393,19 @@
                 const rect = canvas.getBoundingClientRect();
                 imgX = (touch.clientX - rect.left) - startX;
                 imgY = (touch.clientY - rect.top) - startY;
-                drawCanvas();
+                render();
             }
         });
 
         canvas.addEventListener('touchend', () => isDragging = false);
 
         document.getElementById('btnWhatsAppOrder').onclick = () => {
-            let text = `Salam Dibçək Art! Mən saytdan xüsusi dibçək konfiqurasiyası seçdim:%0A- Gül: ${currentPlantName}%0A- Qiymət: ${document.getElementById('totalPrice').textContent}%0AZəhmət olmasa sifariş üçün əlaqə saxlayın.`;
+            let text = `Salam Dibçək Art! Mən saytdan xüsusi dibçək dizaynı seçdim:%0A- Dibçək: ${currentPotType}%0A- Gül: ${currentPlantName}%0A- Qiymət: ${document.getElementById('totalPrice').textContent}%0AZəhmət olmasa sifariş üçün əlaqə saxlayın.`;
             window.open(`https://wa.me/994702887282?text=${text}`);
         };
 
-        // Initial Load
-        loadImagesAndRender();
+        // Initial Render
+        render();
     </script>
 </body>
 </html>

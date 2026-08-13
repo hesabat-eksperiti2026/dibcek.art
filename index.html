@@ -3,177 +3,347 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dibç?k Art | Xüsusi Dizayn ?l Isi Dibç?kl?r & Gül Evim</title>
-    <!-- Google Fonts & FontAwesome -->
+    <title>Dibçək Art & Gül Evim | Əl İşi Dibçəklər və Buketlər</title>
+    <!-- Fontlar və İkonlar -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <style>
         :root {
-            --primary: #1b4332;
-            --primary-light: #2d6a4f;
-            --accent: #d4af37;
-            --bg-light: #f8f9fa;
-            --surface: #ffffff;
-            --text-dark: #1a1a1a;
-            --text-muted: #666666;
-            --border: #e2e8f0;
-            --radius-lg: 16px;
-            --radius-md: 10px;
-            --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
-            --font-heading: 'Cormorant Garamond', serif;
+            --primary: #12372A;
+            --primary-light: #2D6A4F;
+            --accent: #D4AF37;
+            --bg-light: #FBFB9;
+            --surface: #FFFFFF;
+            --text-dark: #1F2937;
+            --text-muted: #6B7280;
+            --border: #E5E7EB;
+            --radius-lg: 20px;
+            --radius-md: 12px;
+            --shadow-card: 0 10px 25px -5px rgba(0, 0, 0, 0.08);
+            --font-heading: 'Playfair Display', serif;
             --font-body: 'Plus Jakarta Sans', sans-serif;
         }
 
-        * { box-sizing: border-box; margin: 0; padding: 0; }
-        body { font-family: var(--font-body); background-color: var(--bg-light); color: var(--text-dark); line-height: 1.6; }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: var(--font-body); }
+        body { background-color: #F8FAFC; color: var(--text-dark); line-height: 1.5; }
 
         /* HEADER */
-        header { position: sticky; top: 0; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-bottom: 1px solid var(--border); z-index: 1000; }
-        .nav-container { max-width: 1200px; margin: 0 auto; padding: 12px 20px; display: flex; justify-content: space-between; align-items: center; }
+        header { position: sticky; top: 0; background: rgba(255, 255, 255, 0.98); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.03); }
+        .nav-container { max-width: 1280px; margin: 0 auto; padding: 14px 24px; display: flex; justify-content: space-between; align-items: center; }
         .logo-wrapper { display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--primary); }
-        .logo-title { font-family: var(--font-heading); font-size: 26px; font-weight: 700; }
-        .logo-subtitle { font-size: 10px; text-transform: uppercase; letter-spacing: 2px; color: var(--accent); font-weight: 600; }
-        .nav-links a { text-decoration: none; color: var(--text-dark); font-weight: 500; margin-left: 20px; }
-        .btn-custom-nav { background: linear-gradient(135deg, var(--accent), #f39c12); color: white !important; padding: 10px 20px; border-radius: 20px; font-weight: 600 !important; }
+        .logo-title { font-family: var(--font-heading); font-size: 28px; font-weight: 700; letter-spacing: -0.5px; }
+        .logo-subtitle { font-size: 10px; text-transform: uppercase; letter-spacing: 2px; color: var(--accent); font-weight: 700; }
+        .nav-links { display: flex; gap: 24px; align-items: center; }
+        .nav-links a { text-decoration: none; color: var(--text-dark); font-weight: 600; font-size: 15px; transition: 0.2s; }
+        .nav-links a:hover { color: var(--primary-light); }
+        .btn-custom-nav { background: var(--primary); color: white !important; padding: 10px 22px; border-radius: 30px; font-weight: 600 !important; box-shadow: 0 4px 12px rgba(18, 55, 42, 0.2); }
 
-        /* HERO */
-        .hero { background: linear-gradient(rgba(27, 67, 50, 0.88), rgba(45, 106, 79, 0.85)), url('https://images.unsplash.com/photo-1485955900006-10f4d324d411?auto=format&fit=crop&w=1600&q=80'); background-size: cover; color: white; padding: 80px 20px; text-align: center; }
-        .hero h1 { font-family: var(--font-heading); font-size: 46px; margin-bottom: 16px; }
-        .btn-primary { background: var(--accent); color: #1a1a1a; padding: 14px 32px; border-radius: 30px; font-weight: 700; text-decoration: none; border: none; cursor: pointer; display: inline-flex; gap: 8px; align-items: center; }
+        /* HERO SECTION */
+        .hero { background: linear-gradient(rgba(18, 55, 42, 0.85), rgba(18, 55, 42, 0.9)), url('WhatsApp Image 2026-01-05 at 13.53.58.jpg') center/cover; color: white; padding: 90px 20px; text-align: center; }
+        .hero h1 { font-family: var(--font-heading); font-size: 52px; font-weight: 700; margin-bottom: 18px; line-height: 1.2; }
+        .hero p { font-size: 19px; max-width: 750px; margin: 0 auto 32px auto; color: #E2E8F0; font-weight: 300; }
+        .btn-gold { background: var(--accent); color: #111; padding: 15px 36px; border-radius: 30px; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; gap: 10px; box-shadow: 0 6px 20px rgba(212, 175, 55, 0.3); font-size: 16px; }
 
-        /* CONSTRUCTOR */
-        .container { max-width: 1200px; margin: 0 auto; padding: 50px 20px; }
-        .constructor-card { background: var(--surface); border-radius: var(--radius-lg); box-shadow: var(--shadow-lg); overflow: hidden; display: grid; grid-template-columns: 1fr 1fr; border: 1px solid var(--border); }
-        @media (max-width: 900px) { .constructor-card { grid-template-columns: 1fr; } .nav-links { display: none; } }
+        .container { max-width: 1280px; margin: 0 auto; padding: 60px 20px; }
+        .section-header { text-align: center; margin-bottom: 40px; }
+        .section-header h2 { font-family: var(--font-heading); font-size: 38px; color: var(--primary); margin-bottom: 8px; }
+        .section-header p { color: var(--text-muted); font-size: 16px; }
 
-        .canvas-box { background: #f0f4f8; padding: 20px; display: flex; flex-direction: column; align-items: center; justify-content: center; }
-        .canvas-wrapper { width: 320px; height: 420px; background: white; border-radius: 16px; position: relative; overflow: hidden; box-shadow: 0 10px 20px rgba(0,0,0,0.05); }
+        /* SLIDER / CATALOG CAROUSEL */
+        .slider-wrapper { position: relative; overflow: hidden; padding: 10px 5px; }
+        .slider-container { display: flex; gap: 24px; overflow-x: auto; scroll-behavior: smooth; padding-bottom: 25px; scroll-snap-type: x mandatory; }
+        .slider-container::-webkit-scrollbar { height: 8px; }
+        .slider-container::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 10px; }
+        .slider-card { flex: 0 0 300px; scroll-snap-align: start; background: white; border-radius: var(--radius-md); border: 1px solid var(--border); overflow: hidden; box-shadow: var(--shadow-card); transition: transform 0.3s; }
+        .slider-card:hover { transform: translateY(-5px); }
+        .slider-card img { width: 100%; height: 320px; object-fit: cover; }
+        .slider-card-body { padding: 18px; }
+        .badge { background: #FEF3C7; color: #92400E; font-size: 11px; font-weight: 700; padding: 4px 10px; border-radius: 20px; text-transform: uppercase; display: inline-block; margin-bottom: 8px; }
+        .card-title { font-size: 17px; font-weight: 700; margin-bottom: 8px; color: var(--text-dark); }
+        .card-price { font-size: 20px; font-weight: 800; color: var(--primary); margin-bottom: 14px; }
+        .btn-wa-card { width: 100%; background: #25D366; color: white; border: none; padding: 11px; border-radius: 8px; font-weight: 700; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 8px; text-decoration: none; font-size: 14px; }
+
+        /* CONSTRUCTOR SECTION */
+        .constructor-card { background: white; border-radius: var(--radius-lg); border: 1px solid var(--border); box-shadow: var(--shadow-card); display: grid; grid-template-columns: 1fr 1fr; overflow: hidden; }
+        @media(max-width: 960px) { .constructor-card { grid-template-columns: 1fr; } .hero h1 { font-size: 36px; } .nav-links { display: none; } }
+
+        .canvas-area { background: #F1F5F9; padding: 30px; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+        .canvas-holder { width: 320px; height: 420px; background: white; border-radius: 16px; position: relative; box-shadow: 0 8px 25px rgba(0,0,0,0.06); overflow: hidden; }
         #potCanvas { width: 100%; height: 100%; cursor: grab; }
 
-        .controls-panel { padding: 30px; display: flex; flex-direction: column; gap: 20px; }
-        .step-num { background: var(--primary); color: white; width: 24px; height: 24px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700; }
-        .option-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-top: 8px; }
-        .option-btn { background: var(--bg-light); border: 2px solid var(--border); padding: 8px; text-align: center; border-radius: 8px; cursor: pointer; font-size: 12px; font-weight: 600; }
-        .option-btn.selected { border-color: var(--primary); color: var(--primary); background: rgba(27,67,50,0.05); }
+        .panel-area { padding: 36px; display: flex; flex-direction: column; gap: 24px; }
+        .step-title { font-weight: 700; font-size: 16px; margin-bottom: 12px; display: flex; align-items: center; gap: 10px; }
+        .step-title span { background: var(--primary); color: white; width: 26px; height: 26px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 13px; }
 
-        /* CATALOG */
-        .products-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 20px; margin-top: 30px; }
-        .product-card { background: white; border-radius: 12px; border: 1px solid var(--border); overflow: hidden; }
-        .product-img { width: 100%; height: 260px; object-fit: cover; }
-        .product-info { padding: 16px; }
-        .btn-order-item { width: 100%; background: var(--primary); color: white; border: none; padding: 10px; border-radius: 8px; font-weight: 600; cursor: pointer; margin-top: 10px; }
+        .real-select-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+        .select-box { border: 2px solid var(--border); border-radius: 10px; padding: 8px; text-align: center; cursor: pointer; transition: 0.2s; background: white; }
+        .select-box img { width: 100%; height: 75px; object-fit: cover; border-radius: 6px; margin-bottom: 6px; }
+        .select-box.active { border-color: var(--primary); background: #F0FDF4; }
+        .select-box p { font-size: 12px; font-weight: 700; }
+
+        .btn-order-main { background: #25D366; color: white; border: none; padding: 16px; border-radius: 30px; font-size: 17px; font-weight: 700; width: 100%; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 10px; box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3); }
+
+        /* FOOTER */
+        footer { background: var(--primary); color: white; padding: 60px 20px 30px 20px; margin-top: 80px; }
+        .footer-grid { max-width: 1280px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 40px; margin-bottom: 40px; }
+        .footer-col h3 { font-family: var(--font-heading); font-size: 24px; color: var(--accent); margin-bottom: 16px; }
+        .footer-col p { color: #CBD5E1; font-size: 15px; margin-bottom: 10px; }
+        .copyright { text-align: center; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 24px; color: #94A3B8; font-size: 14px; }
     </style>
 </head>
 <body>
 
+    <!-- HEADER -->
     <header>
         <div class="nav-container">
             <a href="#" class="logo-wrapper">
-                <svg width="42" height="42" viewBox="0 0 100 100" fill="none">
-                    <circle cx="50" cy="50" r="46" stroke="#1b4332" stroke-width="3" stroke-dasharray="4 2"/>
-                    <path d="M35 48 L38 70 Q50 76 62 70 L65 48 Z" fill="#1b4332"/>
-                    <path d="M50 48 Q40 30 28 32 Q38 45 50 48 Z" fill="#d4af37"/>
-                    <path d="M50 48 Q60 30 72 32 Q62 45 50 48 Z" fill="#d4af37"/>
+                <svg width="45" height="45" viewBox="0 0 100 100" fill="none">
+                    <circle cx="50" cy="50" r="46" stroke="#12372A" stroke-width="3" stroke-dasharray="4 2"/>
+                    <path d="M35 48 L38 70 Q50 76 62 70 L65 48 Z" fill="#12372A"/>
+                    <path d="M50 48 Q40 30 28 32 Q38 45 50 48 Z" fill="#D4AF37"/>
+                    <path d="M50 48 Q60 30 72 32 Q62 45 50 48 Z" fill="#D4AF37"/>
                 </svg>
                 <div>
-                    <div class="logo-title">dibç?k.art</div>
+                    <div class="logo-title">dibçək.art</div>
                     <div class="logo-subtitle">Flowers & Home Decor</div>
                 </div>
             </a>
             <nav class="nav-links">
-                <a href="#constructor" class="btn-custom-nav"><i class="fa-solid fa-paintbrush"></i> Öz Dibç?yini Yarat</a>
                 <a href="#catalog">Kataloq</a>
+                <a href="#constructor" class="btn-custom-nav"><i class="fa-solid fa-paintbrush"></i> Öz Dibçəyini Yarat</a>
+                <a href="#contact">Əlaqə</a>
             </nav>
         </div>
     </header>
 
+    <!-- HERO -->
     <section class="hero">
-        <h1>Sizin Ist?diyiniz S?kil Dibç?k Üz?rind?!</h1>
-        <p>S?klinizi yükl?yin, dibç?k v? gül novünü seçin, canli baxin v? WhatsApp il? sifaris edin.</p>
-        <br>
-        <a href="#constructor" class="btn-primary"><i class="fa-solid fa-wand-magic-sparkles"></i> Konstruktoru Sina</a>
+        <h1>Əl İşi Rəssam Dibçəkləri Və Təravətli Buketlər</h1>
+        <p>İstədiyiniz şəkli və ya xüsusi yazını dibçək üzərinə çəkirik. Saytda canlı görünüşünə baxın və bir kliklə WhatsApp ilə sifariş edin.</p>
+        <a href="#constructor" class="btn-gold"><i class="fa-solid fa-wand-magic-sparkles"></i> Öz Dizaynını Yarat</a>
     </section>
 
+    <!-- CATALOG SLIDER SECTION -->
+    <section class="container" id="catalog">
+        <div class="section-header">
+            <h2>Eksklüziv Kolleksiyamız</h2>
+            <p>Rəssamlarımızın hazırladığı hazır dibçəklər (Yan-yana sürüşdürün ➔)</p>
+        </div>
+
+        <div class="slider-wrapper">
+            <div class="slider-container">
+                <!-- Card 1 -->
+                <div class="slider-card">
+                    <img src="WhatsApp Image 2026-01-05 at 13.53.58.jpg" alt="Əl İşi Dibçək">
+                    <div class="slider-card-body">
+                        <span class="badge">Rəssam Əl İşi</span>
+                        <div class="card-title">Portret İllüstrasiyalı Dibçək</div>
+                        <div class="card-price">38 AZN</div>
+                        <a href="https://wa.me/994702887282?text=Salam!%20Portret%20İllüstrasiyalı%20Dibçək%20sifariş%20etmək%20istəyirəm" target="_blank" class="btn-wa-card">
+                            <i class="fa-brands fa-whatsapp fa-lg"></i> Sifariş Et
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="slider-card">
+                    <img src="WhatsApp Image 2026-01-05 at 13.53.57.jpg" alt="Yazılı Dibçək">
+                    <div class="slider-card-body">
+                        <span class="badge">Hədiyyəlik Xüsusi</span>
+                        <div class="card-title">"Dünya bir yana, sən bir yana"</div>
+                        <div class="card-price">32 AZN</div>
+                        <a href="https://wa.me/994702887282?text=Salam!%20Yazılı%20Dibçək%20sifariş%20etmək%20istəyirəm" target="_blank" class="btn-wa-card">
+                            <i class="fa-brands fa-whatsapp fa-lg"></i> Sifariş Et
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="slider-card">
+                    <img src="WhatsApp Image 2026-01-05 at 13.54.09.jpeg" alt="Qızılı İşləməli Dibçək">
+                    <div class="slider-card-body">
+                        <span class="badge">Modern Dizayn</span>
+                        <div class="card-title">Qızılı Vərəq İşləməli Dibçək</div>
+                        <div class="card-price">35 AZN</div>
+                        <a href="https://wa.me/994702887282?text=Salam!%20Qızılı%20Vərəq%20İşləməli%20Dibçək%20sifariş%20etmək%20istəyirəm" target="_blank" class="btn-wa-card">
+                            <i class="fa-brands fa-whatsapp fa-lg"></i> Sifariş Et
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="slider-card">
+                    <img src="WhatsApp Image 2026-01-05 at 13.53.58 (1).jpg" alt="Tom Jerry Dibçək">
+                    <div class="slider-card-body">
+                        <span class="badge">Çizgi Film Art</span>
+                        <div class="card-title">Tom & Jerry Əl İşi Dibçək</div>
+                        <div class="card-price">28 AZN</div>
+                        <a href="https://wa.me/994702887282?text=Salam!%20Tom%20və%20Jerry%20Dibçək%20sifariş%20etmək%20istəyirəm" target="_blank" class="btn-wa-card">
+                            <i class="fa-brands fa-whatsapp fa-lg"></i> Sifariş Et
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="slider-card">
+                    <img src="WhatsApp Image 2026-01-05 at 13.53.59.jpg" alt="Motivli Dibçək">
+                    <div class="slider-card-body">
+                        <span class="badge">Klassik Naxış</span>
+                        <div class="card-title">Ağ Gül Naxışlı Saxsı Dibçək</div>
+                        <div class="card-price">30 AZN</div>
+                        <a href="https://wa.me/994702887282?text=Salam!%20Ağ%20Gül%20Naxışlı%20Dibçək%20sifariş%20etmək%20istəyirəm" target="_blank" class="btn-wa-card">
+                            <i class="fa-brands fa-whatsapp fa-lg"></i> Sifariş Et
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LIVE CONSTRUCTOR SECTION -->
     <section class="container" id="constructor">
-        <h2 style="font-family: var(--font-heading); font-size: 36px; text-align: center; color: var(--primary);">Canli Dibç?k Konstruktoru</h2>
-        <br>
+        <div class="section-header">
+            <h2>Öz Dibçəyini Yarat (Canlı Önizləmə)</h2>
+            <p>Seçdiyiniz şəklin dibçək üzərində necə duracağını saytda anında görün</p>
+        </div>
+
         <div class="constructor-card">
-            <div class="canvas-box">
-                <div class="canvas-wrapper">
+            <div class="canvas-area">
+                <div class="canvas-holder">
                     <canvas id="potCanvas" width="320" height="420"></canvas>
                 </div>
-                <p style="font-size: 11px; color: var(--text-muted); margin-top: 8px;">*S?kli barmaginizla v? ya maulla sürüsdür? bil?rsiniz</p>
+                <p style="font-size: 12px; color: var(--text-muted); margin-top: 10px;">
+                    <i class="fa-solid fa-hand-pointer"></i> Yüklədiyiniz şəkli brauzerdə sürüşdürə bilərsiniz
+                </p>
             </div>
 
-            <div class="controls-panel">
+            <div class="panel-area">
+                <!-- Step 1: Pot Type -->
                 <div>
-                    <span class="step-num">1</span> <strong>Dibç?k Ölçüsü & Formasi</strong>
-                    <div class="option-grid">
-                        <div class="option-btn selected" onclick="setPot('white')">Ag Saxsi<br>(16cm)</div>
-                        <div class="option-btn" onclick="setPot('terracotta')">Saxsi Qutusu<br>(14cm)</div>
-                        <div class="option-btn" onclick="setPot('dark')">Gümüsü<br>(12cm)</div>
+                    <div class="step-title"><span>1</span> Dibçək Formasını Seçin</div>
+                    <div class="real-select-grid">
+                        <div class="select-box active" onclick="setPot('white', this)">
+                            <img src="WhatsApp Image 2026-01-05 at 13.53.58.jpg" alt="Ağ Saxsı">
+                            <p>Ağ Saxsı (16cm)</p>
+                        </div>
+                        <div class="select-box" onclick="setPot('terracotta', this)">
+                            <img src="WhatsApp Image 2026-01-05 at 13.53.59.jpg" alt="Klassik Saxsı">
+                            <p>Klassik Saxsı</p>
+                        </div>
+                        <div class="select-box" onclick="setPot('dark', this)">
+                            <img src="WhatsApp Image 2026-01-05 at 13.54.09.jpeg" alt="Gümüşü">
+                            <p>Gümüşü / Qara</p>
+                        </div>
                     </div>
                 </div>
 
+                <!-- Step 2: Upload Image -->
                 <div>
-                    <span class="step-num">2</span> <strong>S?kil Yükl?yin (Portret/M?tn)</strong>
-                    <input type="file" id="imageUploader" accept="image/*" style="margin-top: 8px; width: 100%;">
+                    <div class="step-title"><span>2</span> Çəkiləcək Şəkli Yükləyin</div>
+                    <input type="file" id="imageUploader" accept="image/*" style="width: 100%; padding: 10px; border: 1px dashed var(--border); border-radius: 8px;">
                 </div>
 
+                <!-- Step 3: Plant Choice -->
                 <div>
-                    <span class="step-num">3</span> <strong>Içinin Gülü</strong>
-                    <div class="option-grid">
-                        <div class="option-btn selected" onclick="setPlant('yelpik')">Yelpik Gülü</div>
-                        <div class="option-btn" onclick="setPlant('sansevieria')">Sansevieria</div>
-                        <div class="option-btn" onclick="setPlant('kalanchoe')">Kalanchoe</div>
+                    <div class="step-title"><span>3</span> İçinə Əkiləcək Canlı Gül</div>
+                    <div class="real-select-grid">
+                        <div class="select-box active" onclick="setPlant('sansevieria', this)">
+                            <img src="WhatsApp Image 2026-01-05 at 13.53.58 (1).jpg" alt="Sansevieria">
+                            <p>Sansevieria</p>
+                        </div>
+                        <div class="select-box" onclick="setPlant('spathi', this)">
+                            <img src="WhatsApp Image 2026-01-05 at 13.53.58.jpg" alt="Spathiphyllum">
+                            <p>Spathiphyllum</p>
+                        </div>
+                        <div class="select-box" onclick="setPlant('kalanchoe', this)">
+                            <img src="WhatsApp Image 2026-01-05 at 13.53.59 (1).jpg" alt="Kalanchoe">
+                            <p>Kalanchoe</p>
+                        </div>
                     </div>
                 </div>
 
-                <div style="border-top: 1px solid var(--border); padding-top: 15px;">
-                    <h3 style="color: var(--primary);">T?xmini Qiym?t: <span id="totalPrice">35 AZN</span></h3>
-                    <button class="btn-primary" id="btnOrderWA" style="width: 100%; justify-content: center; margin-top: 10px;">
-                        <i class="fa-brands fa-whatsapp fa-lg"></i> WhatsApp-a Gönd?r
+                <div style="border-top: 1px solid var(--border); padding-top: 18px;">
+                    <div style="font-size: 22px; font-weight: 800; color: var(--primary); margin-bottom: 12px;">
+                        Təxmini Qiymət: <span id="totalPrice">35 AZN</span>
+                    </div>
+                    <button class="btn-order-main" id="btnWhatsAppOrder">
+                        <i class="fa-brands fa-whatsapp fa-xl"></i> WhatsApp İlə Sifariş Et
                     </button>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- FOOTER -->
+    <footer id="contact">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h3>Dibçək Art & Gül Evim</h3>
+                <p>Əl işi eksklüziv dibçəklər, canlı bitkilər və zövqlü buketlər.</p>
+                <p><i class="fa-brands fa-instagram"></i> @dibcek_art</p>
+            </div>
+            <div class="footer-col">
+                <h3>Əlaqə & Ünvan</h3>
+                <p><i class="fa-solid fa-location-dot"></i> Təbriz küç., Tələt Şıxəliyev 14, Bakı</p>
+                <p><i class="fa-solid fa-phone"></i> 070-2887282 (WhatsApp Aktivdir)</p>
+            </div>
+            <div class="footer-col">
+                <h3>Ödəniş Və Çatdırılma</h3>
+                <p>TamKart və BirKart keçərlidir. Bakı daxili sürətli çatdırılma.</p>
+            </div>
+        </div>
+        <div class="copyright">
+            © 2026 Dibçək Art. Bütün hüquqlar qorunur.
+        </div>
+    </footer>
+
+    <!-- INTERACTIVE SCRIPT -->
     <script>
         const canvas = document.getElementById('potCanvas');
         const ctx = canvas.getContext('2d');
-        let currentPot = 'white', currentPlant = 'yelpik', uploadedImg = null;
+        let currentPot = 'white', currentPlant = 'sansevieria', uploadedImg = null;
         let imgX = 160, imgY = 250, isDragging = false, startX, startY;
 
         function render() {
             ctx.clearRect(0, 0, 320, 420);
             
             // Draw Plant
-            ctx.fillStyle = '#2d6a4f';
-            if(currentPlant === 'yelpik') {
-                ctx.beginPath(); ctx.ellipse(160, 110, 30, 60, 0, 0, Math.PI*2); ctx.fill();
+            ctx.fillStyle = '#1e5138';
+            if(currentPlant === 'sansevieria') {
+                ctx.beginPath(); ctx.ellipse(160, 110, 20, 70, 0, 0, Math.PI*2); ctx.fill();
+                ctx.beginPath(); ctx.ellipse(140, 130, 15, 50, -0.2, 0, Math.PI*2); ctx.fill();
+                ctx.beginPath(); ctx.ellipse(180, 130, 15, 50, 0.2, 0, Math.PI*2); ctx.fill();
+            } else if(currentPlant === 'spathi') {
+                ctx.beginPath(); ctx.ellipse(160, 120, 40, 50, 0, 0, Math.PI*2); ctx.fill();
+                ctx.fillStyle = '#ffffff';
+                ctx.beginPath(); ctx.ellipse(160, 80, 10, 25, 0, 0, Math.PI*2); ctx.fill();
             } else {
-                ctx.beginPath(); ctx.fillRect(145, 60, 30, 120); ctx.fill();
+                ctx.fillStyle = '#e11d48';
+                ctx.beginPath(); ctx.arc(160, 110, 35, 0, Math.PI*2); ctx.fill();
             }
 
             // Draw Pot
-            ctx.fillStyle = currentPot === 'white' ? '#ffffff' : (currentPot === 'terracotta' ? '#e07a5f' : '#2b2d42');
+            ctx.fillStyle = currentPot === 'white' ? '#FFFFFF' : (currentPot === 'terracotta' ? '#D97706' : '#334155');
             ctx.beginPath();
-            ctx.moveTo(100, 180); ctx.lineTo(220, 180); ctx.lineTo(195, 330); ctx.lineTo(125, 330);
-            ctx.closePath(); ctx.fill(); ctx.strokeStyle = '#cbd5e0'; ctx.stroke();
+            ctx.moveTo(95, 180); ctx.lineTo(225, 180); ctx.lineTo(200, 330); ctx.lineTo(120, 330);
+            ctx.closePath(); ctx.fill(); 
+            ctx.strokeStyle = '#CBD5E1'; ctx.lineWidth = 2; ctx.stroke();
 
-            // Draw Custom Image
+            // Overlay Image
             if(uploadedImg) {
                 ctx.save();
                 ctx.beginPath();
-                ctx.moveTo(102, 182); ctx.lineTo(218, 182); ctx.lineTo(193, 328); ctx.lineTo(127, 328);
+                ctx.moveTo(97, 182); ctx.lineTo(223, 182); ctx.lineTo(198, 328); ctx.lineTo(122, 328);
                 ctx.closePath(); ctx.clip();
                 ctx.drawImage(uploadedImg, imgX - 60, imgY - 60, 120, 120);
                 ctx.restore();
             } else {
-                ctx.fillStyle = '#999'; ctx.font = '12px sans-serif'; ctx.fillText('S?kiliniz burada gör?n?c?k', 90, 260);
+                ctx.fillStyle = '#94A3B8'; ctx.font = '600 13px "Plus Jakarta Sans"';
+                ctx.fillText('Yüklədiyiniz şəkil', 110, 250);
+                ctx.fillText('burada görünəcək', 108, 270);
             }
         }
 
@@ -190,16 +360,27 @@
             }
         });
 
-        function setPot(p) { currentPot = p; render(); }
-        function setPlant(pl) { currentPlant = pl; render(); }
+        function setPot(p, el) { 
+            currentPot = p; 
+            el.parentElement.querySelectorAll('.select-box').forEach(b => b.classList.remove('active'));
+            el.classList.add('active');
+            render(); 
+        }
+
+        function setPlant(pl, el) { 
+            currentPlant = pl; 
+            el.parentElement.querySelectorAll('.select-box').forEach(b => b.classList.remove('active'));
+            el.classList.add('active');
+            render(); 
+        }
 
         canvas.addEventListener('mousedown', (e) => { isDragging = true; startX = e.offsetX - imgX; startY = e.offsetY - imgY; });
         canvas.addEventListener('mousemove', (e) => { if(isDragging && uploadedImg) { imgX = e.offsetX - startX; imgY = e.offsetY - startY; render(); } });
         window.addEventListener('mouseup', () => isDragging = false);
 
-        document.getElementById('btnOrderWA').onclick = () => {
-            let text = `Salam Dibç?k Art! M?n saytdan custom dibç?k yigdim. Qiym?t: ${document.getElementById('totalPrice').textContent}`;
-            window.open(`https://wa.me/994500000000?text=${encodeURIComponent(text)}`);
+        document.getElementById('btnWhatsAppOrder').onclick = () => {
+            let text = `Salam Dibçək Art! Mən saytdan yeni custom dibçək yığdım:%0A- Dibçək: ${currentPot}%0A- Gül: ${currentPlant}%0A- Qiymət: ${document.getElementById('totalPrice').textContent}%0AZəhmət olmasa sifarişi dəqiqləşdirin.`;
+            window.open(`https://wa.me/994702887282?text=${text}`);
         };
 
         render();

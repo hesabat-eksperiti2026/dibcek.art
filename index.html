@@ -88,6 +88,17 @@
 
         .btn-order-main { background: #25D366; color: white; border: none; padding: 16px; border-radius: 30px; font-size: 17px; font-weight: 700; width: 100%; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 10px; box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3); }
 
+        /* REVIEWS SECTION */
+        .reviews-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px; margin-top: 20px; }
+        .review-card { background: white; border-radius: var(--radius-md); border: 1px solid var(--border); padding: 22px; box-shadow: var(--shadow-card); display: flex; flex-direction: column; justify-content: space-between; }
+        .review-header { display: flex; align-items: center; gap: 14px; margin-bottom: 14px; }
+        .review-avatar { width: 50px; height: 50px; border-radius: 50%; object-fit: cover; border: 2px solid var(--accent); }
+        .review-user h4 { font-size: 16px; font-weight: 700; color: var(--text-dark); }
+        .review-user p { font-size: 12px; color: var(--text-muted); }
+        .review-stars { color: #F59E0B; font-size: 13px; margin-bottom: 10px; }
+        .review-text { font-size: 14px; color: #374151; font-style: italic; margin-bottom: 16px; line-height: 1.6; }
+        .review-product-img { width: 100%; height: 180px; object-fit: cover; border-radius: 8px; border: 1px solid var(--border); }
+
         /* FOOTER */
         footer { background: var(--primary); color: white; padding: 60px 20px 30px 20px; margin-top: 80px; }
         .footer-grid { max-width: 1280px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 40px; margin-bottom: 40px; }
@@ -102,9 +113,9 @@
     <header>
         <div class="nav-container">
             <a href="#" class="logo-wrapper">
-              <img src="logo.png" alt="Dibçək Art Logo" class="logo-img">
+                <img src="dibcək logo.jpg" alt="Dibçək Art Logo" class="logo-img">
                 <div>
-                    <div class="logo-title">Dibçək.art</div>
+                    <div class="logo-title">dibçək.art</div>
                     <div class="logo-subtitle">Flowers & Home Decor</div>
                 </div>
             </a>
@@ -112,6 +123,7 @@
                 <a href="#catalog">Kataloq</a>
                 <a href="#bouquets">Buketlər</a>
                 <a href="#constructor" class="btn-custom-nav"><i class="fa-solid fa-paintbrush"></i> Öz Dibçəyini Yarat</a>
+                <a href="#reviews">Müştəri Rəyləri</a>
                 <a href="#contact">Əlaqə</a>
             </nav>
         </div>
@@ -229,7 +241,6 @@
 
         <div class="slider-wrapper">
             <div class="slider-container">
-                <!-- Bouquet 1 -->
                 <div class="slider-card">
                     <img src="https://images.unsplash.com/photo-1561181286-d3fee7d55364?auto=format&fit=crop&w=600&q=80" alt="Qırmızı Qızılgül Buketi">
                     <div class="slider-card-body">
@@ -242,7 +253,6 @@
                     </div>
                 </div>
 
-                <!-- Bouquet 2 -->
                 <div class="slider-card">
                     <img src="https://images.unsplash.com/photo-1526047932273-341f2a7631f9?auto=format&fit=crop&w=600&q=80" alt="Miks Hədiyyəlik Buket">
                     <div class="slider-card-body">
@@ -255,7 +265,6 @@
                     </div>
                 </div>
 
-                <!-- Bouquet 3 -->
                 <div class="slider-card">
                     <img src="https://images.unsplash.com/photo-1582794543139-8ac9cb0f7b11?auto=format&fit=crop&w=600&q=80" alt="Qutuda Qızılgüllər">
                     <div class="slider-card-body">
@@ -268,7 +277,6 @@
                     </div>
                 </div>
 
-                <!-- Bouquet 4 -->
                 <div class="slider-card">
                     <img src="https://images.unsplash.com/photo-1591886960571-74d43a9d4166?auto=format&fit=crop&w=600&q=80" alt="Piyon Buketi">
                     <div class="slider-card-body">
@@ -336,6 +344,124 @@
                         <i class="fa-brands fa-whatsapp fa-xl"></i> WhatsApp İlə Sifariş Et
                     </button>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CUSTOMER REVIEWS SECTION -->
+    <section class="container" id="reviews">
+        <div class="section-header">
+            <h2>Müştərilərimizin Rəyləri</h2>
+            <p>Dibçək Art & Gül Evim-dən alış-veriş edən razı müştərilərimizin fikirləri</p>
+        </div>
+
+        <div class="reviews-grid">
+            <!-- Review 1 -->
+            <div class="review-card">
+                <div>
+                    <div class="review-header">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80" alt="Nərmin M." class="review-avatar">
+                        <div class="review-user">
+                            <h4>Nərmin Məmmədova</h4>
+                            <p>Bakı (Xüsusi Portret Dibçək)</p>
+                        </div>
+                    </div>
+                    <div class="review-stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="review-text">"Rəfiqəmin ad günü üçün portret şəklini dibçək üzərinə sifariş etmişdim. Rəssamın əl işinə heyran qaldım, şəkil birebir eyni çəkilmişdi! Çox təşəkkür edirəm, hədiyyəni çox bəyəndi."</p>
+                </div>
+                <img src="WhatsApp Image 2026-01-05 at 13.53.58.jpeg" alt="Müştəri şəkli" class="review-product-img">
+            </div>
+
+            <!-- Review 2 -->
+            <div class="review-card">
+                <div>
+                    <div class="review-header">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80" alt="Elvin R." class="review-avatar">
+                        <div class="review-user">
+                            <h4>Elvin Rəhimov</h4>
+                            <p>Bakı (101 Qızılgül Buketi)</p>
+                        </div>
+                    </div>
+                    <div class="review-stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="review-text">"Nişanlım üçün buket sifariş verdim. Qızılgüllər tam təravətli idi, qoxusu bütün otağı götürmüşdü. Çatdırılma da dedikləri vaxtda dəqiq oldu. İşinizin peşəkarısınız."</p>
+                </div>
+                <img src="https://images.unsplash.com/photo-1561181286-d3fee7d55364?auto=format&fit=crop&w=500&q=80" alt="Müştəri şəkli" class="review-product-img">
+            </div>
+
+            <!-- Review 3 -->
+            <div class="review-card">
+                <div>
+                    <div class="review-header">
+                        <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=150&q=80" alt="Aysel K." class="review-avatar">
+                        <div class="review-user">
+                            <h4>Aysel Kərimova</h4>
+                            <p>Bakı (Ağ Saxsı Sansevieria)</p>
+                        </div>
+                    </div>
+                    <div class="review-stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="review-text">"Evimin interyeri üçün Sansevieria dibçəyi aldım. Saxsının keyfiyyəti və dibçəyin dizaynı evimə xüsusi gözəllik qatdı. Paketləmə də çox səliqəli idi."</p>
+                </div>
+                <img src="Sansevieria.jpg.jpg" alt="Müştəri şəkli" class="review-product-img">
+            </div>
+
+            <!-- Review 4 -->
+            <div class="review-card">
+                <div>
+                    <div class="review-header">
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&q=80" alt="Tural A." class="review-avatar">
+                        <div class="review-user">
+                            <h4>Tural Əliyev</h4>
+                            <p>Bakı ("Dünya bir yana" Seti)</p>
+                        </div>
+                    </div>
+                    <div class="review-stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="review-text">"Anamın ad gününə xüsusi yazılı dibçək sifariş etmişdim. Həm boyası silinmir, həm də çox mənalı hədiyyə alındı. Qiyməti də keyfiyyətinə görə çox münasibdir."</p>
+                </div>
+                <img src="WhatsApp Image 2026-01-05 at 13.53.57.jpeg" alt="Müştəri şəkli" class="review-product-img">
+            </div>
+
+            <!-- Review 5 -->
+            <div class="review-card">
+                <div>
+                    <div class="review-header">
+                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=150&q=80" alt="Leyla H." class="review-avatar">
+                        <div class="review-user">
+                            <h4>Leyla Həsənova</h4>
+                            <p>Bakı (Kalanchoe Çiçəkli Dibçək)</p>
+                        </div>
+                    </div>
+                    <div class="review-stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="review-text">"Ofis masam üçün aldım, alandan bəri hər gələn soruşur ki haradan asmısan. Çiçəkləri də çox təravətlidir. Saytdakı konfiqurasiya imkanı da çox rahatdır."</p>
+                </div>
+                <img src="Kalanchoe.jpg.jpg" alt="Müştəri şəkli" class="review-product-img">
+            </div>
+
+            <!-- Review 6 -->
+            <div class="review-card">
+                <div>
+                    <div class="review-header">
+                        <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=150&q=80" alt="Rauf Q." class="review-avatar">
+                        <div class="review-user">
+                            <h4>Rauf Qasımov</h4>
+                            <p>Bakı (Qızılı Vərəq Dibçək)</p>
+                        </div>
+                    </div>
+                    <div class="review-stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="review-text">"Qızılı detallarla işlənmiş dibçək həqiqətən çox lüks görünür. TamKart ilə taksitlə ödəniş etməyimiz də böyük üstünlük oldu. Təkrar sifariş edəcəyik!"</p>
+                </div>
+                <img src="WhatsApp Image 2026-01-05 at 13.54.09.jpeg" alt="Müştəri şəkli" class="review-product-img">
             </div>
         </div>
     </section>
